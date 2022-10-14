@@ -19,7 +19,7 @@ let type2num51 = document.getElementById("type2num51")
 let type2num52 = document.getElementById("type2num52")
 let type2num61 = document.getElementById("type2num61")
 let type2num62 = document.getElementById("type2num62")
-
+let date = new Date().getSeconds()
 function quay()
 {
     count++
@@ -27,13 +27,15 @@ function quay()
     {
         document.getElementById("quay").innerHTML = "QUAY"
         clearInterval(interval)
-        document.getElementById("music").pause()
+        if(date%2 !== 0 ) document.getElementById("music1").pause()
+        else document.getElementById("music2").pause()
     } 
     else 
     {
         document.getElementById("quay").innerHTML = "CHỐT"
         interval = setInterval(select,10)
-        document.getElementById("music").play()
+        if(date%2 !== 0 ) document.getElementById("music1").play()
+        else document.getElementById("music2").play()
     }
 }
 function select()
