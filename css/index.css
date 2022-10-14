@@ -50,7 +50,15 @@ li
     align-items: center;
     border-radius: 100%;
     margin: 10px;
-    filter:drop-shadow(0 0 5px white);
+    animation-name:chay;
+    animation-duration:5s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes chay
+{
+    from {filter:drop-shadow(0 0 0px white);} to {filter:drop-shadow(0 0 7px white);}
 }
 .container fieldset:nth-child(3) ul li:nth-child(3)
 {
