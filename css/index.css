@@ -27,7 +27,7 @@ fieldset
 legend
 {
     margin: 0px;
-    font-size: 20px;
+    font-size: 16px;
     color:rgba(255,255,255,0.2);
 }
 ul
@@ -42,9 +42,9 @@ li
 {
     display: block;
     padding:30px;
-    width: 180px;
-    height: 180px;
-    font-size: 5vw;
+    width: 90px;
+    height: 90px;
+    font-size: 4vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,8 +116,8 @@ img
         font-size: 30px;
         padding:5px;
         margin:0 7px;
-        width:70px;
-        height: 70px;
+        width:60px;
+        height: 60px;
     }
     button
     {
